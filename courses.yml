@@ -1,0 +1,159 @@
+CMN 001:
+CMN 003:
+MAT 021A:
+MAT 021B:
+        - MAT 021A or MAT 021AH or MAT 017A
+MAT 021C:
+        - MAT 016C or MAT 017C or MAT 021B or MAT021BH
+        - MAT 016C or MAT 017C or MAT 021B or MAT 021BH or MAT 017B
+MAT 021D:
+        - MAT 021C or MAT 021CH or MAT 017C
+MAT 022A:
+        - MAT 016C or MAT 017C or MAT 021C or MAT 021CH
+        - ENG 006 or EME 005 or MAT 022AL
+MAT 022B:
+        - MAT 022A or MAT 067
+PHY 009A:
+        - MAT 021B or MAT 021M
+PHY 009B:
+        - PHY 009A
+        - MAT 021C
+        - MAT 021D
+PHY 009C:
+        - PHY 009B
+        - MAT 021D
+        - MAT 022A
+PHY 009D:
+        - PHY 009C
+        - MAT 022A
+        - MAT 022B
+ENG 001:
+ENG 002:
+ENG 003:
+        - ELWR
+ENG 004:
+ENG 006:
+        - MAT 016A or MAT 017A or MAT 021A
+ENG 007:
+ENG 017:
+        - MAT 022A
+        - MAT 022B
+        - PHY 009C or PHY 009D
+ENG 020:
+ENG 035:
+        - PHY 009A
+        - MAT 021D
+ENG 045:
+        - MAT 016C
+        - CHE 002A
+        - PHY 009A
+ENG 100:
+        - ENG 017
+ENG 102:
+        - ENG 035
+        - MAT 022B
+ENG 103:
+        - ENG 035
+        - MAT 022B
+        - PHY 009B
+ENG 104:
+        - ENG 035
+        - MAT 022B
+ENG 104L:
+        - ENG 104
+ENG 105:
+        - MAT 022B
+        - PHY 009B
+ENG 106:
+ENG 111:
+        - ENG 017
+ENG 121:
+        - ENG 100
+        - ENG 102
+ENG 122:
+        - ENG 102
+        - ENG 006 or ENG 005 or ECS 030
+ENG 160:
+        - PHY 009D or PHY 010 or PHY 001B
+        - MAT 016B
+ENG 180:
+        - ENG 006 or EME 005 or ECS 030
+        - MAT 021D
+        - MAT 022B
+ENG 188:
+        - PHY 007C or PHY 009C
+ENG 190:
+EME 001:
+EME 005:
+        - MAT 016A or MAT 021A
+EME 050:
+        - ENG 004
+        - PHY 009A
+EME 092:
+EME 097TC:
+EME 099:
+EME 108:
+        - ENG 100
+        - ENG 102
+        - ENG 104
+EME 109:
+        - EME 106
+EME 115:
+        - ENG 006 or EME 005 or ECS 030 or ECM 006
+        - MAT 021A
+        - MAT 021B
+        - MAT 021C
+        - MAT 021D
+        - MAT 022A
+        - MAT 022B
+        - PHY 009A
+        - PHY 009B
+        - PHY 009C
+EME 121:
+        - ENG 102
+        - ENG 006 or EME 005 or ECS 030
+EME 134:
+        - ENG 102
+EME 139:
+        - ENG 102
+        - ENG 103
+EME 150A:
+        - ENG 045 or ENG 045Y
+        - ENG 104
+        - EME 050
+EME 150B:
+        - EME 150A
+EME 151:
+        - EME 150A
+EME 152:
+        - ENG 102
+        - ENG 006 or EME 005 or ECS 030
+EME 154:
+        - ENG 100
+        - ENG 102
+        - EME 050
+EME 161:
+        - EME 106
+EME 163:
+        - EME 106
+        - EME 050
+EME 164:
+        - EME 106
+        - EME 165
+EME 165:
+        - ENG 006 or EME 005 or ECS 030
+        - ENG 103
+        - ENG 105
+EME 171:
+        - ENG 100
+        - ENG 102
+EME 172:
+        - ENG 100
+        - ENG 102
+EME 185A:
+        - EME 050
+        - EME 150A
+        - EME 165
+        - ENG 003 or CMN 001 or CMN 003
+EME 185B:
+        - EME 185A
