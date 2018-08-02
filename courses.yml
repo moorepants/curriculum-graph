@@ -1,159 +1,551 @@
+CHE 002A:
+  title: General Chemistry
+  required:
+  required-choice: EME
+  group: Mathematics and Physical Sciences
+  prereqs:
+  variations:
+    - H
+CHE 002B:
+  title: General Chemistry
+  required: EME
+  required-choice: EME
+  group: Mathematics and Physical Sciences
+  prereqs:
+    - CHE 002A
+  variations:
+    - H
 CMN 001:
+  title: Intro to Public Speaking
+  required:
+  required-choice: EME
+  group: Communication
+  prereqs:
 CMN 003:
-MAT 021A:
-MAT 021B:
-        - MAT 021A or MAT 021AH or MAT 017A
-MAT 021C:
-        - MAT 016C or MAT 017C or MAT 021B or MAT021BH
-        - MAT 016C or MAT 017C or MAT 021B or MAT 021BH or MAT 017B
-MAT 021D:
-        - MAT 021C or MAT 021CH or MAT 017C
-MAT 022A:
-        - MAT 016C or MAT 017C or MAT 021C or MAT 021CH
-        - ENG 006 or EME 005 or MAT 022AL
-MAT 022B:
-        - MAT 022A or MAT 067
-PHY 009A:
-        - MAT 021B or MAT 021M
-PHY 009B:
-        - PHY 009A
-        - MAT 021C
-        - MAT 021D
-PHY 009C:
-        - PHY 009B
-        - MAT 021D
-        - MAT 022A
-PHY 009D:
-        - PHY 009C
-        - MAT 022A
-        - MAT 022B
-ENG 001:
-ENG 002:
+  title: Group Communication
+  required:
+  required-choice: EME
+  group: Communication
+  prereqs:
+ECH 140:
+  title: Mathematical Methods in Biochemical and Chemical Engineering
+  required:
+  required-choice: EME
+  group: Applied Mathematics
+  prereqs:
+    - MAT 022B
+    - ENG 006
+ECI 114:
+  title: Probabilistic Systems Analysis
+  required:
+  required-choice: EME
+  group: Applied Mathematics
+  prereqs:
+    - MAT 021C
+ECS 030:
+  title: Programming and Problem Solving
+  required:
+  required-choice:
+  group:
+  prereqs:
+    - MAT 021A
+ECS 130:
+  title: Scientific Computation
+  required:
+  required-choice: EME
+  group: Applied Mathematics
+  prereqs:
+    - MAT 022A
+    - ECS 030 or ENG 006
+#ENG 001:
+  #title:
+  #required:
+  #required-choice:
+  #group:
+  #prereqs:
+#ENG 002:
+  #title:
+  #required:
+  #required-choice:
+  #group:
+  #prereqs:
 ENG 003:
-        - ELWR
+  title: Introduction to Engineering Design
+  required:
+  required-choice: EME
+  group: Communication
+  prereqs:
 ENG 004:
+  title: Engineering Grapics in Design
+  required: EME
+  required-choice:
+  group: Engineering
+  prereqs:
 ENG 006:
-        - MAT 016A or MAT 017A or MAT 021A
-ENG 007:
+  title: Engineering Problem Solving
+  required:
+  required-choice: EME
+  group: Engineering
+  prereqs:
+    - MAT 021A
+#ENG 007:
+  #title:
+  #required:
+  #required-choice:
+  #group:
+  #prereqs:
 ENG 017:
-        - MAT 022A
-        - MAT 022B
-        - PHY 009C or PHY 009D
-ENG 020:
+  title: Circuits I
+  required: EME
+  group: Engineering
+  prereqs:
+    - MAT 022A
+    - MAT 022B
+    - PHY 009C
+#ENG 020:
+  #title:
+  #required:
+  #required-choice:
+  #group:
+  #prereqs:
 ENG 035:
-        - PHY 009A
-        - MAT 021D
+  title: Statics
+  required: EME
+  required-choice:
+  group: Engineering
+  prereqs:
+    - PHY 009A
+    - MAT 021D
 ENG 045:
-        - MAT 016C
-        - CHE 002A
-        - PHY 009A
+  title: Properties of Materials
+  required: EME
+  required-choice:
+  group: Engineering
+  prereqs:
+    - MAT 021C
+    - CHE 002A
+    - PHY 009A
+  variations:
+    - Y
 ENG 100:
-        - ENG 017
+  title: Electronic Circuits and Systems
+  required: EME
+  required-choice:
+  group: Engineering core requirements
+  prereqs:
+    - ENG 017
 ENG 102:
-        - ENG 035
-        - MAT 022B
+  title: Dynamics
+  required: EME
+  required-choice:
+  group: Engineering core requirements
+  prereqs:
+    - ENG 035
+    - MAT 022B
 ENG 103:
-        - ENG 035
-        - MAT 022B
-        - PHY 009B
+  title: Fluid Mechanics
+  required: EME
+  required-choice:
+  group: Engineering core requirements
+  prereqs:
+    - ENG 035
+    - MAT 022B
+    - PHY 009B
 ENG 104:
-        - ENG 035
-        - MAT 022B
+  title: Mechanics of Materials
+  required: EME
+  required-choice:
+  group: Engineering core requirements
+  prereqs:
+    - ENG 035
+    - MAT 022B
 ENG 104L:
-        - ENG 104
+  title:
+  required:
+  required-choice:
+  group: Engineering core requirements
+  prereqs:
+    - ENG 104
 ENG 105:
-        - MAT 022B
-        - PHY 009B
-ENG 106:
-ENG 111:
-        - ENG 017
-ENG 121:
-        - ENG 100
-        - ENG 102
+  title: Thermodynamics
+  required: EME
+  required-choice:
+  group: Engineering core requirements
+  prereqs:
+    - MAT 022B
+    - PHY 009B
+#ENG 106:
+  #title: Engineering Problem Solving
+  #required:
+  #required-choice:
+  #group:
+  #prereqs:
+#ENG 111:
+  #title:
+  #required:
+  #required-choice:
+  #group:
+  #prereqs:
+    #- ENG 017
+#ENG 121:
+  #title:
+  #required:
+  #required-choice:
+  #group:
+  #prereqs:
+    #- ENG 100
+    #- ENG 102
 ENG 122:
-        - ENG 102
-        - ENG 006 or ENG 005 or ECS 030
-ENG 160:
-        - PHY 009D or PHY 010 or PHY 001B
-        - MAT 016B
+  title: Introduction to Mechanical Vibrations
+  required:
+  required-choice: EME
+  group: System Dynamics / Mechanical Design Elective
+  prereqs:
+    - ENG 102
+    # TODO : The catalog lists ENG 005 instead of EME 005 which is incorrect.
+    - ENG 006 or EME 005 or ECS 030
+#ENG 160:
+  #title:
+  #required:
+  #required-choice:
+  #prereqs:
+    #- PHY 009D or PHY 010 or PHY 001B
+    #- MAT 016B
 ENG 180:
-        - ENG 006 or EME 005 or ECS 030
-        - MAT 021D
-        - MAT 022B
-ENG 188:
-        - PHY 007C or PHY 009C
+  title: Engineering Analysis
+  required:
+  required-choice: EME
+  group: Applied Mathematics
+  prereqs:
+    - ENG 006 or EME 005 or ECS 030
+    - MAT 021D
+    - MAT 022B
+#ENG 188:
+  #title:
+  #required:
+  #required-choice:
+  #group:
+  #prereqs:
+    #- PHY 007C or PHY 009C
 ENG 190:
+  title: Professional Responsibilities
+  required: EME
+  required-choice:
+  group: Engineering core requirements
+  prereqs:
 EME 001:
+  title: Introduction to Mechanical Engineering
+  required:
+  required-choice:
+  group:
+  prereqs:
 EME 005:
-        - MAT 016A or MAT 021A
+  title: Engineering Applications
+  required:
+  required-choice: EME
+  group: Engineering
+  prereqs:
+    - MAT 021A
 EME 050:
-        - ENG 004
-        - PHY 009A
-EME 092:
-EME 097TC:
-EME 099:
+  title: Manufacturing Processes
+  required: EME
+  required-choice:
+  group: Engineering
+  prereqs:
+    - ENG 004
+    - PHY 009A
+#EME 092:
+  #title:
+  #required:
+  #required-choice:
+  #prereqs:
+#EME 097TC:
+  #title:
+  #required:
+  #required-choice:
+  #prereqs:
+#EME 099:
+  #title:
+  #required:
+  #required-choice:
+  #prereqs:
+EME 102:
+  title: Dynamics
+  required: EME
+  required-choice:
+  group: Engineering core requirements
+  prereqs:
+    - ENG 035
+    - MAT 022B
+EME 103:
+  title: Fluid Mechanics
+  required: EME
+  required-choice:
+  group: Engineering core requirements
+  prereqs:
+    - MAT 022B
+    - PHY 009B
+EME 104:
+  title: Mechanics of Materials
+  required: EME
+  required-choice:
+  group: Engineering core requirements
+  prereqs:
+    - ENG 035
+    - MAT 022B
+EME 105:
+  title: Thermodynamics
+  required: EME
+  required-choice:
+  group: Engineering core requirements
+  prereqs:
+    - MAT 022B
+    - PHY 009B
+EME 106:
+  title: Thermo-Fluid Dynamics
+  required: EME
+  required-choice:
+  group: Engineering core requirements
+  prereqs:
+    - EME 103
+    - EME 105
 EME 108:
-        - ENG 100
-        - ENG 102
-        - ENG 104
+  title:
+  required: EME
+  required-choice:
+  group: Engineering core requirements
+  prereqs:
+    - ENG 100
+    - ENG 102
+    - ENG 104
 EME 109:
-        - EME 106
+  title:
+  required: EME
+  required-choice:
+  group: Engineering core requirements
+  prereqs:
+    - EME 106
 EME 115:
-        - ENG 006 or EME 005 or ECS 030 or ECM 006
-        - MAT 021A
-        - MAT 021B
-        - MAT 021C
-        - MAT 021D
-        - MAT 022A
-        - MAT 022B
-        - PHY 009A
-        - PHY 009B
-        - PHY 009C
+  title: Introduction to Numerical Analysis
+  required:
+  required-choice: EME
+  group: Applied Mathematics
+  prereqs:
+    - ENG 006 or EME 005 or ECS 030
+    - MAT 021A
+    - MAT 021B
+    - MAT 021C
+    - MAT 021D
+    - MAT 022A
+    - MAT 022B
+    - PHY 009A
+    - PHY 009B
+    - PHY 009C
 EME 121:
-        - ENG 102
-        - ENG 006 or EME 005 or ECS 030
+  title: Engineering Applications of Dynamics
+  required:
+  required-choice: EME
+  group: System Dynamics / Mechanical Design Elective
+  prereqs:
+    - ENG 102
+    - ENG 006 or EME 005 or ECS 030
 EME 134:
-        - ENG 102
+  title: Vehicle Stability
+  required:
+  required-choice: EME
+  group: Restricted Electives
+  prereqs:
+    - ENG 102
 EME 139:
-        - ENG 102
-        - ENG 103
+  title:
+  required:
+  required-choice: EME
+  group: System Dynamics / Mechanical Design Elective
+  prereqs:
+    - ENG 102
+    - ENG 103
 EME 150A:
-        - ENG 045 or ENG 045Y
-        - ENG 104
-        - EME 050
+  title: Mechanical Design
+  required: EME
+  required-choice:
+  group: Engineering core requirements
+  prereqs:
+    - ENG 045
+    - ENG 104
+    - EME 050
 EME 150B:
-        - EME 150A
+  title: Mechanical Design
+  required:
+  required-choice: EME
+  group: System Dynamics / Mechanical Design Elective
+  prereqs:
+    - EME 150A
 EME 151:
-        - EME 150A
+  title: Statistical Methods in Design & Manufacturing
+  required:
+  required-choice: EME
+  group: Applied Mathematics
+  prereqs:
+    - EME 150A
 EME 152:
-        - ENG 102
-        - ENG 006 or EME 005 or ECS 030
+  title: Computer-Aided Mechanism Design
+  required:
+  required-choice: EME
+  group: Restricted Electives
+  prereqs:
+    - ENG 102
+    - ENG 006 or EME 005 or ECS 030
 EME 154:
-        - ENG 100
-        - ENG 102
-        - EME 050
+  title: Mechatronics
+  required:
+  required-choice: EME
+  group: System Dynamics / Mechanical Design Elective
+  prereqs:
+    - ENG 100
+    - ENG 102
+    - EME 050
 EME 161:
-        - EME 106
+  title: Combustion and the Environment
+  required:
+  required-choice: EME
+  group: Restricted Electives
+  prereqs:
+    - EME 106
 EME 163:
-        - EME 106
-        - EME 050
+  title: Internal Combustion Engines
+  required:
+  required-choice: EME
+  group: Restricted Electives
+  prereqs:
+    - EME 106
+    - EME 050
 EME 164:
-        - EME 106
-        - EME 165
+  title: Introduction to HVAC
+  required:
+  required-choice: EME
+  group: Restricted Electives
+  prereqs:
+    - EME 106
+    - EME 165
 EME 165:
-        - ENG 006 or EME 005 or ECS 030
-        - ENG 103
-        - ENG 105
+  title: Fundamentals of Heat Transfer
+  required: EME
+  required-choice:
+  group: Engineering core requirements
+  prereqs:
+    - ENG 006 or EME 005 or ECS 030
+    - ENG 103
+    - ENG 105
 EME 171:
-        - ENG 100
-        - ENG 102
+  title: Simulation & Design of Mechatronic Systems
+  required:
+  required-choice: EME
+  group: System Dynamics / Mechanical Design Elective
+  prereqs:
+    - ENG 100
+    - ENG 102
 EME 172:
-        - ENG 100
-        - ENG 102
+  title: Automatic Control of Engineering Systems
+  required: EME
+  required-choice:
+  group: Engineering core requirements
+  prereqs:
+    - ENG 100
+    - ENG 102
 EME 185A:
-        - EME 050
-        - EME 150A
-        - EME 165
-        - ENG 003 or CMN 001 or CMN 003
+  title: Mechanical Systems Design Project
+  required: EME
+  required-choice:
+  group: Senior Design Experience
+  prereqs:
+    - EME 050
+    - EME 150A
+    - EME 165
+    - ENG 003 or CMN 001 or CMN 003
 EME 185B:
-        - EME 185A
+  title: Mechanical Systems Design Project
+  required: EME
+  required-choice:
+  group: Senior Design Experience
+  prereqs:
+    - EME 185A
+MAT 021A:
+  title: Calculus
+  required: EME
+  required-choice:
+  group: Mathematics and Physical Sciences
+  prereqs:
+MAT 021B:
+  title: Calculus
+  required: EME
+  required-choice:
+  group: Mathematics and Physical Sciences
+  prereqs:
+    - MAT 021A
+  variations:
+    - H
+MAT 021C:
+  title: Calculus
+  required: EME
+  required-choice:
+  group: Mathematics and Physical Sciences
+  prereqs:
+    - MAT 021B
+  variations:
+    - H
+MAT 021D:
+  title: Vector Analysis
+  required: EME
+  required-choice:
+  group: Mathematics and Physical Sciences
+  prereqs:
+    - MAT 021C
+MAT 022A:
+  title: Linear Algebra
+  required: EME
+  required-choice:
+  group: Mathematics and Physical Sciences
+  prereqs:
+    - MAT 021C
+    - ENG 006 or EME 005 or MAT 022AL
+MAT 022B:
+  title: Differential Equations
+  required: EME
+  required-choice:
+  group: Mathematics and Physical Sciences
+  prereqs:
+    - MAT 022A
+PHY 009A:
+  title: Classical Physics
+  required: EME
+  required-choice:
+  group: Mathematics and Physical Sciences
+  prereqs:
+    - MAT 021B
+PHY 009B:
+  title: Classical Physics
+  required: EME
+  required-choice:
+  group: Mathematics and Physical Sciences
+  prereqs:
+    - PHY 009A
+    - MAT 021C
+    - MAT 021D
+PHY 009C:
+  title: Classical Physics
+  required: EME
+  required-choice:
+  group: Mathematics and Physical Sciences
+  prereqs:
+    - PHY 009B
+    - MAT 021D
+    - MAT 022A
+PHY 009D:
+  title: Modern Physics
+  required:
+  required-choice:
+  group: Mathematics and Physical Sciences
+  prereqs:
+    - PHY 009C
+    - MAT 022A
+    - MAT 022B
