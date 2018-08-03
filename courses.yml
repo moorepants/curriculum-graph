@@ -269,46 +269,38 @@ EME 050:
   #required:
   #required-choice:
   #prereqs:
-EME 102:
-  title: Dynamics
-  required: EME
-  required-choice:
-  group: Engineering core requirements
-  prereqs:
-    - ENG 035
-    - MAT 022B
-EME 103:
-  title: Fluid Mechanics
-  required: EME
-  required-choice:
-  group: Engineering core requirements
-  prereqs:
-    - MAT 022B
-    - PHY 009B
-EME 104:
-  title: Mechanics of Materials
-  required: EME
-  required-choice:
-  group: Engineering core requirements
-  prereqs:
-    - ENG 035
-    - MAT 022B
-EME 105:
-  title: Thermodynamics
-  required: EME
-  required-choice:
-  group: Engineering core requirements
-  prereqs:
-    - MAT 022B
-    - PHY 009B
+#EME 102:
+  #title:
+  #required:
+  #required-choice:
+  #group:
+  #prereqs:
+#EME 103:
+  #title:
+  #required:
+  #required-choice:
+  #group:
+  #prereqs:
+#EME 104:
+  #title:
+  #required:
+  #required-choice:
+  #group:
+  #prereqs:
+#EME 105:
+  #title:
+  #required:
+  #required-choice:
+  #group:
+  #prereqs:
 EME 106:
   title: Thermo-Fluid Dynamics
   required: EME
   required-choice:
   group: Engineering core requirements
   prereqs:
-    - EME 103
-    - EME 105
+    - ENG 103
+    - ENG 105
 EME 108:
   title:
   required: EME
