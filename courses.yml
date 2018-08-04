@@ -88,6 +88,7 @@ ENG 006:
   group: Engineering
   prereqs:
     - MAT 021A
+    - MAT 021B
 #ENG 007:
   #title:
   #required:
@@ -302,7 +303,7 @@ EME 106:
     - ENG 103
     - ENG 105
 EME 108:
-  title:
+  title: Measurement Systems
   required: EME
   required-choice:
   group: Engineering core requirements
@@ -311,7 +312,7 @@ EME 108:
     - ENG 102
     - ENG 104
 EME 109:
-  title:
+  title: Experimental Methods for Thermal Fluids
   required: EME
   required-choice:
   group: Engineering core requirements
@@ -349,7 +350,7 @@ EME 134:
   prereqs:
     - ENG 102
 EME 139:
-  title:
+  title: Stability of Flexible Dynamic Systems Stability of Flexible Dynamic Systems
   required:
   required-choice: EME
   group: System Dynamics / Mechanical Design Elective
@@ -467,6 +468,8 @@ MAT 021A:
   required-choice:
   group: Mathematics and Physical Sciences
   prereqs:
+  variations:
+    - H
 MAT 021B:
   title: Calculus
   required: EME
@@ -492,6 +495,8 @@ MAT 021D:
   group: Mathematics and Physical Sciences
   prereqs:
     - MAT 021C
+  variations:
+    - H
 MAT 022A:
   title: Linear Algebra
   required: EME
@@ -499,7 +504,7 @@ MAT 022A:
   group: Mathematics and Physical Sciences
   prereqs:
     - MAT 021C
-    - ENG 006 or EME 005 or MAT 022AL
+    - ENG 006 or MAT 022AL
 MAT 022B:
   title: Differential Equations
   required: EME
@@ -532,12 +537,12 @@ PHY 009C:
     - PHY 009B
     - MAT 021D
     - MAT 022A
-PHY 009D:
-  title: Modern Physics
-  required:
-  required-choice:
-  group: Mathematics and Physical Sciences
-  prereqs:
-    - PHY 009C
-    - MAT 022A
-    - MAT 022B
+#PHY 009D:
+  #title: Modern Physics
+  #required:
+  #required-choice:
+  #group: Mathematics and Physical Sciences
+  #prereqs:
+    #- PHY 009C
+    #- MAT 022A
+    #- MAT 022B
