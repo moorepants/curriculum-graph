@@ -5,6 +5,7 @@ import networkx
 from networkx.drawing.nx_agraph import to_agraph
 
 COLORSCHEME = 'paired12'
+NODE_WIDTH = 0.5
 
 with open('courses.yml') as f:
     courses = yaml.load(f)
@@ -12,11 +13,12 @@ with open('courses.yml') as f:
 graph = networkx.DiGraph()
 
 graph.graph['graph'] = {
-                        #'splines': 'ortho',
+                        'splines': True,
                         'ranksep': 1.6,
                         'nodesep': 0.8,
                         'rankdir': 'LR',
-                        'rank': 'max',
+                        'rank': 'min',
+                        'ratio': 1.0,
                        }
 graph.graph['node'] = {
                        'shape': 'square',
@@ -48,13 +50,13 @@ for course, data in courses.items():
     if data['required'] is not None and 'EME' in data['required']:
         graph.add_node(course, penwidth=10, style='filled',
                        colorscheme=COLORSCHEME, fillcolor=group_colors[group],
-                       label=course + title)
+                       label=course + title, width=NODE_WIDTH)
     elif data['required-choice'] is not None and 'EME' in data['required-choice']:
         graph.add_node(course, penwidth=10, style='filled,dashed',
                        colorscheme=COLORSCHEME, fillcolor=group_colors[group],
-                       label=course + title)
+                       label=course + title, width=NODE_WIDTH)
     else:
-        graph.add_node(course, label=course + title)
+        graph.add_node(course, label=course + title, width=NODE_WIDTH)
 
     if prereqs is not None:
         for prereq in prereqs:
@@ -62,7 +64,7 @@ for course, data in courses.items():
                 choices = [p.strip() for p in prereq.split('or')]
                 for choice in choices:
                     if choice not in graph:
-                        graph.add_node(choice)
+                        graph.add_node(choice, width=NODE_WIDTH)
                     try:
                         color = group_colors[courses[choice]['group']]
                     except KeyError:
@@ -72,7 +74,7 @@ for course, data in courses.items():
                                    color=color)
             else:
                 if prereq not in graph:
-                    graph.add_node(prereq)
+                    graph.add_node(prereq, width=NODE_WIDTH)
                 graph.add_edge(prereq, course, penwidth=5, arrowsize=2)
 
 graphviz_graph = to_agraph(graph)
@@ -84,7 +86,9 @@ print(networkx.algorithms.dag.dag_longest_path(graph))
 
 print('Courses sorted by number of prerequisites.')
 # TODO : Need to account for choice prereqs.
-print(sorted(dict(graph.in_degree()).items(), key=lambda kv: kv[1]))
+for course, num in sorted(dict(graph.in_degree()).items(), key=lambda kv: kv[1]):
+    print('{}: {}'.format(course, num))
 
 print('Courses sorted by number of courses that depend on them.')
-print(sorted(dict(graph.out_degree()).items(), key=lambda kv: kv[1]))
+for course, num in sorted(dict(graph.out_degree()).items(), key=lambda kv: kv[1]):
+    print('{}: {}'.format(course, num))
