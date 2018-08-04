@@ -41,3 +41,9 @@ The subfields are:
 Install the dependencies with conda::
 
     $ conda install networkx pygraphviz pyyaml
+
+License
+=======
+
+Code licensed under the MIT license. Copyright Jason K. Moore, 2018. Data is
+CCO (public domain).
